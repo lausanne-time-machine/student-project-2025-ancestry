@@ -27,6 +27,8 @@ function keyTranslation(key: string) {
 		case "birthYear":
 			return "année de naissance"
 		case "origin":
+			return "origine"
+		case "job":
 			return "emploi"
 		case "houseNb":
 			return "numéro"
