@@ -21,16 +21,21 @@ loadData().then(loadedData => {
 <template>
   <header class="sticky top-0 z-50 bg-white shadow-md">
     <nav class="container mx-auto flex items-center justify-between p-4">
-      <a href="#" class="text-xl font-bold">Lausanne Ancestry</a>
+      <a href="#" class="flex items-center space-x-2">
+        <img src="/logo.jpg" alt="Logo" class="h-8 w-auto">
+        <span class="text-xl font-bold">Lausanne Ancestry</span>
+      </a>
       <ul class="flex space-x-4">
         <RouterLink to="/">Accueil</RouterLink>
         <RouterLink to="/trees">Arbres</RouterLink>
         <RouterLink to="/jobs">Liste des emplois</RouterLink>
         <RouterLink to="/graph">Visualisation interactive</RouterLink>
         <RouterLink to="/analysis">Analyse des données</RouterLink>
-		</ul>
-	</nav>
-</header>
+      </ul>
+    </nav>
+  </header>
+
+
 
   <!-- <div v-if="isLoading" class="flex items-center justify-center h-screen">
     <div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-gray-900"></div>
