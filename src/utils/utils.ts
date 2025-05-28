@@ -31,7 +31,7 @@ export function mapDict<K extends string, V, U>(
 	);
 }
 
-export async function fetchJsonData(url: string = "/tracked.json"): Promise<any> {
+export async function fetchJsonData(url: string = import.meta.env.BASE_URL + "/tracked.json"): Promise<any> {
 	try {
 		const response = await fetch(url);
 		if (!response.ok) {
